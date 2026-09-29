@@ -282,6 +282,134 @@ canvas {
     font-weight: bold;
 }
 
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.site-footer {
+    max-width: 1400px;
+    margin: 30px auto 0;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #1769e0;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======================================================
+   INFORMATION MODAL
+====================================================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 9999;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    padding: 30px;
+
+    overflow-y: auto;
+}
+
+
+.modal-content {
+    position: relative;
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    background: #fff;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.2);
+
+    line-height: 1.6;
+
+    text-align: left;
+}
+
+
+.modal-content h2 {
+    margin-top: 0;
+
+    color: #222;
+}
+
+
+.modal-content h3 {
+    margin-top: 25px;
+
+    color: #333;
+}
+
+
+.modal-content p {
+    margin-bottom: 15px;
+}
+
+
+.modal-content ul {
+    padding-left: 25px;
+}
+
+
+.close-modal {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: auto;
+
+    padding: 5px 10px;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+.close-modal:hover {
+    background: transparent;
+
+    color: #000;
+}
 
 /* ======================================================
    RESPONSIVE
@@ -530,6 +658,316 @@ canvas {
 
     </button>
 
+
+</div>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-links">
+
+        <a
+            href="#"
+            id="aboutLink">
+
+            About / Contact
+
+        </a>
+
+        <span>|</span>
+
+        <a
+            href="#"
+            id="privacyLink">
+
+            Privacy Policy
+
+        </a>
+
+    </div>
+
+
+    <div>
+
+        Project - Graduation Ceremony Image Generator
+
+    </div>
+
+</footer>
+
+
+
+<!-- ======================================================
+     ABOUT / CONTACT MODAL
+====================================================== -->
+
+<div
+    class="modal"
+    id="aboutModal">
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="close-modal"
+            id="closeAbout">
+
+            &times;
+
+        </button>
+
+
+        <h2>
+            About This Project
+        </h2>
+
+
+        <p>
+
+            The <strong>Student Graduation Image Generator</strong>
+            is a student project developed to provide a simple
+            and convenient way to create personalised graduation
+            ceremony images.
+
+        </p>
+
+
+        <h3>
+            How It Works
+        </h3>
+
+
+        <p>
+
+            Users can upload a student photo, enter the student's
+            name, select their department, and add a short
+            description or quote. The tool then generates a
+            personalised graduation image using a predefined
+            template.
+
+        </p>
+
+
+        <p>
+
+            Images are processed
+
+            <strong>
+                directly in the user's web browser
+            </strong>
+
+            using client-side JavaScript and Canvas technology.
+
+            The uploaded image does not need to be sent to
+            a server for processing.
+
+        </p>
+
+
+        <h3>
+            Privacy
+        </h3>
+
+
+        <p>
+
+            This tool does not intentionally collect, store,
+            or harvest user data. Uploaded images and entered
+            information are used only within the browser to
+            generate the image.
+
+        </p>
+
+
+        <p>
+
+            The application does not request usernames,
+            passwords, authentication credentials, payment
+            information, or other account credentials.
+
+        </p>
+
+
+        <h3>
+            Contact
+        </h3>
+
+
+        <p>
+
+            For questions, feedback, or information about
+            this project, please contact akmrh105@gmail.com
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ======================================================
+     PRIVACY POLICY MODAL
+====================================================== -->
+
+<div
+    class="modal"
+    id="privacyModal">
+
+
+    <div class="modal-content">
+
+
+        <button
+            class="close-modal"
+            id="closePrivacy">
+
+            &times;
+
+        </button>
+
+
+        <h2>
+            Privacy Policy
+        </h2>
+
+
+        <p>
+            <strong>
+                Last updated: 29 September 2026
+            </strong>
+        </p>
+
+
+        <p>
+
+            The Student Graduation Image Generator is a
+            student project designed to create personalised
+            graduation ceremony images.
+
+        </p>
+
+
+        <h3>
+            Information We Collect
+        </h3>
+
+
+        <p>
+
+            This tool does not intentionally collect, store,
+            or harvest personal information.
+
+            Information entered into the generator, such as
+            a student name, department, description, or
+            uploaded photo, is used only to generate the
+            requested image.
+
+        </p>
+
+
+        <h3>
+            Client-Side Processing
+        </h3>
+
+
+        <p>
+
+            Images and entered information are processed
+            <strong>
+                client-side, directly in the user's browser
+            </strong>.
+
+            The photo is processed using JavaScript and
+            Canvas technology.
+
+        </p>
+
+
+        <h3>
+            Data Storage
+        </h3>
+
+
+        <p>
+
+            The application does not maintain a database
+            for uploaded photos, student information,
+            descriptions, or generated images.
+
+        </p>
+
+
+        <p>
+
+            Information entered into the generator is not
+            intentionally retained by the application after
+            the webpage is closed or refreshed.
+
+        </p>
+
+
+        <h3>
+            Credentials
+        </h3>
+
+
+        <p>
+
+            This tool does not request or collect usernames,
+            passwords, authentication credentials, payment
+            information, or other account credentials.
+
+        </p>
+
+
+        <h3>
+            Generated Images
+        </h3>
+
+
+        <p>
+
+            Generated images are created within the browser.
+            Users may download the generated image directly
+            to their own device.
+
+        </p>
+
+
+        <h3>
+            Changes to This Policy
+        </h3>
+
+
+        <p>
+
+            This Privacy Policy may be updated if the
+            functionality of the project changes.
+
+        </p>
+
+
+        <h3>
+            Contact
+        </h3>
+
+
+        <p>
+
+            For questions about this project or its privacy
+            practices, please use the contact information
+            provided on the About / Contact page.
+
+        </p>
+
+
+    </div>
 
 </div>
 
@@ -1474,6 +1912,134 @@ downloadBtn.addEventListener(
 
     }
 
+);
+
+//For Footer
+
+// ======================================================
+// ABOUT / PRIVACY MODALS
+// ======================================================
+
+const aboutLink =
+    document.getElementById("aboutLink");
+
+const privacyLink =
+    document.getElementById("privacyLink");
+
+const aboutModal =
+    document.getElementById("aboutModal");
+
+const privacyModal =
+    document.getElementById("privacyModal");
+
+const closeAbout =
+    document.getElementById("closeAbout");
+
+const closePrivacy =
+    document.getElementById("closePrivacy");
+
+
+// ------------------------------------------------------
+// OPEN ABOUT
+// ------------------------------------------------------
+
+aboutLink.addEventListener(
+    "click",
+    function(event) {
+
+        event.preventDefault();
+
+        aboutModal.style.display = "block";
+
+    }
+);
+
+
+// ------------------------------------------------------
+// OPEN PRIVACY POLICY
+// ------------------------------------------------------
+
+privacyLink.addEventListener(
+    "click",
+    function(event) {
+
+        event.preventDefault();
+
+        privacyModal.style.display = "block";
+
+    }
+);
+
+
+// ------------------------------------------------------
+// CLOSE ABOUT
+// ------------------------------------------------------
+
+closeAbout.addEventListener(
+    "click",
+    function() {
+
+        aboutModal.style.display = "none";
+
+    }
+);
+
+
+// ------------------------------------------------------
+// CLOSE PRIVACY
+// ------------------------------------------------------
+
+closePrivacy.addEventListener(
+    "click",
+    function() {
+
+        privacyModal.style.display = "none";
+
+    }
+);
+
+
+// ------------------------------------------------------
+// CLOSE WHEN CLICKING OUTSIDE
+// ------------------------------------------------------
+
+window.addEventListener(
+    "click",
+    function(event) {
+
+        if (event.target === aboutModal) {
+
+            aboutModal.style.display = "none";
+
+        }
+
+        if (event.target === privacyModal) {
+
+            privacyModal.style.display = "none";
+
+        }
+
+    }
+);
+
+
+// ------------------------------------------------------
+// CLOSE WITH ESCAPE KEY
+// ------------------------------------------------------
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            aboutModal.style.display = "none";
+
+            privacyModal.style.display = "none";
+
+        }
+
+    }
 );
 
 </script>
